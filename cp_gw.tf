@@ -8,7 +8,7 @@ resource "azurerm_network_interface" "cp-gw-external" {
         name                          = "cp-gw-public-ip-config"
         subnet_id                     = azurerm_subnet.cp-gw-subnet.id
         private_ip_address_allocation = "Static"
-		private_ip_address = "10.2.0.10"
+		private_ip_address = "10.10.0.10"
         primary = true
 		public_ip_address_id = azurerm_public_ip.cp-gw-public-ip.id
     }
@@ -23,7 +23,7 @@ resource "azurerm_network_interface" "cp-gw-internal" {
         name                          = "cp-gw-internal-config"
         subnet_id                     = azurerm_subnet.cp-gw-internal-subnet.id
         private_ip_address_allocation = "Static"
-		private_ip_address = "10.2.1.10"
+		private_ip_address = "10.10.1.10"
     }
 }
 
