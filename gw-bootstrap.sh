@@ -8,3 +8,8 @@ config_string='install_security_gw=true&install_ppak=true&gateway_cluster_member
 clish -c 'set user admin shell /bin/bash' -s
 
 config_system.orig -s $config_string
+
+clish -c 'set security-gateway maas on auth-token '
+
+reboot
+
