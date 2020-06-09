@@ -11,18 +11,6 @@ variable "location" {
   default     = "West US 2"
 }
 
-# Managemnent VNET
-variable "mgmt-network-vnet-cidr" {
-  type        = string
-  description = "Managemnent VNET"
-}
-
-# Managemnent Subnet
-variable "mgmt-network-subnet-cidr" {
-  type        = string
-  description = "Managemnent Subnet"
-}
-
 # Gateway VNET
 variable "gw-network-vnet-cidr" {
   type        = string

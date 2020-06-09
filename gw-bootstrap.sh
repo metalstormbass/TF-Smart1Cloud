@@ -9,7 +9,7 @@ clish -c 'set user admin shell /bin/bash' -s
 
 config_system.orig -s $config_string
 
-clish -c 'set security-gateway maas on auth-token '
+clish -c 'set security-gateway maas on auth-token INSERT TOKEN HERE'
 
 reboot
 

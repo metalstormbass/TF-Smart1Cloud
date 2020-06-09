@@ -1,8 +1,8 @@
 #CP GW NICS
 resource "azurerm_network_interface" "cp-gw-external" {
     name                = "cp-gw-external"
-    location            = azurerm_resource_group.cp-gw-rg.location
-    resource_group_name = azurerm_resource_group.cp-gw-rg.name
+    location            = azurerm_resource_group.smart1-cp-gw-rg.location
+    resource_group_name = azurerm_resource_group.smart1-cp-gw-rg.name
     enable_ip_forwarding = "true"
 	ip_configuration {
         name                          = "cp-gw-public-ip-config"
@@ -16,8 +16,8 @@ resource "azurerm_network_interface" "cp-gw-external" {
 
 resource "azurerm_network_interface" "cp-gw-internal" {
     name                = "cp-gw-internal"
-    location            = azurerm_resource_group.cp-gw-rg.location
-    resource_group_name = azurerm_resource_group.cp-gw-rg.name
+    location            = azurerm_resource_group.smart1-cp-gw-rg.location
+    resource_group_name = azurerm_resource_group.smart1-cp-gw-rg.name
     enable_ip_forwarding = "true"
 	ip_configuration {
         name                          = "cp-gw-internal-config"
@@ -42,8 +42,8 @@ resource "azurerm_network_interface_security_group_association" "cp-gw-nsg-int2"
 #CP GW Virtual Machine
 resource "azurerm_virtual_machine" "cp-gw" {
     name                  = "${var.company}-cp-gw"
-    location              = azurerm_resource_group.cp-gw-rg.location
-    resource_group_name   = azurerm_resource_group.cp-gw-rg.name
+    location              = azurerm_resource_group.smart1-cp-gw-rg.location
+    resource_group_name   = azurerm_resource_group.smart1-cp-gw-rg.name
     network_interface_ids = [azurerm_network_interface.cp-gw-external.id,azurerm_network_interface.cp-gw-internal.id]
     primary_network_interface_id = azurerm_network_interface.cp-gw-external.id
     vm_size               = "Standard_D4s_v3"

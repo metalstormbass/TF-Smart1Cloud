@@ -2,8 +2,8 @@
 
 resource "azurerm_public_ip" "cp-gw-public-ip" {
     name                         = "cp-gw-public-ip"
-    location                     = azurerm_resource_group.cp-gw-rg.location
-    resource_group_name          = azurerm_resource_group.cp-gw-rg.name
+    location                     = azurerm_resource_group.smart1-cp-gw-rg.location
+    resource_group_name          = azurerm_resource_group.smart1-cp-gw-rg.name
     allocation_method = "Static"
 }
 

@@ -2,7 +2,7 @@
 resource "random_id" "randomId" {
     keepers = {
         # Generate a new ID only when a new resource group is defined
-        resource_group = "${azurerm_resource_group.cp-mgmt-rg.name}"
+        resource_group = "${azurerm_resource_group.smart1-cp-gw-rg.name}"
     }
 
     byte_length = 8
