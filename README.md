@@ -6,7 +6,7 @@ Automatically deploy a gateway in Azure and connect it to Check Point Smart1 Clo
 ## Prerequisites
 Smart 1 Cloud Tenant:
 
-[Check Point Infinity Portal] (https://portal.checkpoint.com)
+[Check Point Infinity Portal](https://portal.checkpoint.com)
 
 Terraform
 
