@@ -82,6 +82,7 @@ terraform apply
 Finally, wait until Terraform has completed. Then wait an addtional 5-10 mins for the VM to complete bootstrapping.
 
 
+## Smart1 Cloud Configuration Steps:
 
 Once finished, you should see the gateway connected to Smart1 Cloud. You will then have to open up Smart Console and add the gateway from there.
 
