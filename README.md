@@ -58,8 +58,6 @@ sic_key ="Vpn123vpn123"
 ```
 
 
-
-
 Edit gw-bootstrap.sh and insert you Smart1 Cloud Token
 
 ```hcl
@@ -82,6 +80,10 @@ terraform apply
 ```
 
 Finally, wait until Terraform has completed. Then wait an addtional 5-10 mins for the VM to complete bootstrapping.
+
+
+
+Once finished, you should see the gateway connected to Smart1 Cloud. You will then have to open up Smart Console and add the gateway from there.
 
 
 
