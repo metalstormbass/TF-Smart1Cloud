@@ -87,6 +87,7 @@ Finally, wait until Terraform has completed. Then wait an addtional 5-10 mins fo
 Once finished, you should see the gateway connected to Smart1 Cloud. You will then have to open up Smart Console and add the gateway from there.
 
 
+## Removal:
 
 To destroy, you need to run:
 
