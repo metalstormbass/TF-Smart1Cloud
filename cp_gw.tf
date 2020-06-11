@@ -87,7 +87,7 @@ resource "azurerm_virtual_machine" "cp-gw" {
         admin_username = "azureuser"
         admin_password = "Vpn123vpn123!"
         custom_data = data.template_file.userdata_setup.rendered
-        ) 
+       
     }
 
     os_profile_linux_config {
