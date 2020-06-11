@@ -49,6 +49,12 @@ variable "sic_key" {
   description = "Sic Key"
 }
 
+#MaaS Token
+variable "token" {
+  type        = string
+  description = "Token"
+}
+
 # environment
 variable "environment" {
   type        = string
