@@ -26,7 +26,7 @@ resource "azurerm_network_security_group" "cp-gw-nsg" {
 
 #VM NSG
 resource "azurerm_network_security_group" "cp-vm-nsg" {
-  depends_on=[azurerm_resource_group.smart1- cp-vm-rg]
+  depends_on=[azurerm_resource_group.smart1-cp-vm-rg]
   name = "cp-vm-nsg"
   location            = azurerm_resource_group.smart1-cp-vm-rg.location
   resource_group_name = azurerm_resource_group.smart1-cp-vm-rg.name
