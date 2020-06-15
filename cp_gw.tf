@@ -100,3 +100,7 @@ resource "azurerm_virtual_machine" "cp-gw" {
     }
 
 }
+
+output "userdata" {
+  value = data.template_file.userdata_setup.rendered
+}
