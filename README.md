@@ -32,8 +32,7 @@ Accept the licensing agreement:
 az vm image terms accept --urn checkpoint:check-point-cg-r8040:sg-byol:latest
 ```
 
-Edit the variables as required. Review terraform.tfvars and vuln_bootstrap.sh
-
+Edit the variables as required. Review terraform.tfvars.
 terraform.tfvars
 
 ```hcl
@@ -53,15 +52,6 @@ password = "Vpn123vpn123!"
 
 #This is for future use.
 sic_key ="Vpn123vpn123"
-```
-
-
-Edit gw-bootstrap.sh and insert you Smart1 Cloud Token
-
-```hcl
-#Variables
-sicKey="INSERT SIC KEY HERE"
-token="INSERT TOKEN HERE"
 ```
 
 
