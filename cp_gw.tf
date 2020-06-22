@@ -85,7 +85,7 @@ resource "azurerm_virtual_machine" "cp-gw" {
     os_profile {
         computer_name  = "${var.company}-cp-gw"
         admin_username = "azureuser"
-        admin_password = "Vpn123vpn123!"
+        admin_password = var.password
         custom_data = data.template_file.userdata_setup.rendered
        
     }
