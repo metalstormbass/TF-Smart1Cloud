@@ -60,6 +60,12 @@ resource "azurerm_virtual_machine" "cp-gw" {
     primary_network_interface_id = azurerm_network_interface.cp-gw-external.id
     vm_size               = "Standard_D4s_v3"
     
+    depends_on = [
+    azurerm_network_interface_security_group_association.cp-gw-nsg-int,
+    azurerm_network_interface_security_group_association.cp-gw-nsg-int2
+   ]
+  
+    
     storage_os_disk {
         name              = "cp-gw-disk"
         caching           = "ReadWrite"
